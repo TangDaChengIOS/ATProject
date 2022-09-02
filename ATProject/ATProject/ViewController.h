@@ -6,8 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ATBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : ATBaseViewController
 
 
 @end

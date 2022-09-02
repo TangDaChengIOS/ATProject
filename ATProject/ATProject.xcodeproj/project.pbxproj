@@ -14,6 +14,9 @@
 		1101603D28C21DB8002767BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1101603C28C21DB8002767BF /* Assets.xcassets */; };
 		1101604028C21DB8002767BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1101603E28C21DB8002767BF /* LaunchScreen.storyboard */; };
 		1101604328C21DB8002767BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1101604228C21DB8002767BF /* main.m */; };
+		1101604C28C2309F002767BF /* ATKVOControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1101604B28C2309F002767BF /* ATKVOControl.m */; };
+		1101604F28C24025002767BF /* ATBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1101604E28C24025002767BF /* ATBaseViewController.m */; };
+		1101605228C2471C002767BF /* ATNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1101605128C2471C002767BF /* ATNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		1101603F28C21DB8002767BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1101604128C21DB8002767BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1101604228C21DB8002767BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1101604A28C2309F002767BF /* ATKVOControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKVOControl.h; sourceTree = "<group>"; };
+		1101604B28C2309F002767BF /* ATKVOControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATKVOControl.m; sourceTree = "<group>"; };
+		1101604D28C24025002767BF /* ATBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBaseViewController.h; sourceTree = "<group>"; };
+		1101604E28C24025002767BF /* ATBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBaseViewController.m; sourceTree = "<group>"; };
+		1101605028C2471C002767BF /* ATNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNavigationController.h; sourceTree = "<group>"; };
+		1101605128C2471C002767BF /* ATNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,8 @@
 		1101602F28C21DB3002767BF /* ATProject */ = {
 			isa = PBXGroup;
 			children = (
+				1101605328C24726002767BF /* Base */,
+				1101604928C2306C002767BF /* kvo */,
 				1101603028C21DB3002767BF /* AppDelegate.h */,
 				1101603128C21DB3002767BF /* AppDelegate.m */,
 				1101603328C21DB3002767BF /* SceneDelegate.h */,
@@ -74,6 +85,26 @@
 				1101604228C21DB8002767BF /* main.m */,
 			);
 			path = ATProject;
+			sourceTree = "<group>";
+		};
+		1101604928C2306C002767BF /* kvo */ = {
+			isa = PBXGroup;
+			children = (
+				1101604A28C2309F002767BF /* ATKVOControl.h */,
+				1101604B28C2309F002767BF /* ATKVOControl.m */,
+			);
+			path = kvo;
+			sourceTree = "<group>";
+		};
+		1101605328C24726002767BF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1101604D28C24025002767BF /* ATBaseViewController.h */,
+				1101604E28C24025002767BF /* ATBaseViewController.m */,
+				1101605028C2471C002767BF /* ATNavigationController.h */,
+				1101605128C2471C002767BF /* ATNavigationController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1101605228C2471C002767BF /* ATNavigationController.m in Sources */,
 				1101603828C21DB3002767BF /* ViewController.m in Sources */,
 				1101603228C21DB3002767BF /* AppDelegate.m in Sources */,
+				1101604F28C24025002767BF /* ATBaseViewController.m in Sources */,
 				1101604328C21DB8002767BF /* main.m in Sources */,
+				1101604C28C2309F002767BF /* ATKVOControl.m in Sources */,
 				1101603528C21DB3002767BF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
